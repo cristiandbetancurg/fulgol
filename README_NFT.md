@@ -7,12 +7,15 @@ El struct Entrada representa una entrada para un partido de fútbol. Tiene los m
 
 El struct NFT representa un NFT de una entrada para un partido de fútbol. Tiene los siguientes campos:
 
+```
 Entrada: La entrada a la que representa el NFT.
 Hash: El hash de la entrada.
 QRCode: El código QR del NFT.
-La función NewNFT() crea un nuevo NFT de una entrada para un partido de fútbol. Para ello, genera un hash para la entrada y lo almacena en el campo Hash del NFT. Luego, genera un código QR con los datos del NFT y lo almacena en el campo QRCode del NFT.
+```
 
-Para usar este código, podemos crear una nueva instancia de la clase Entrada y llamar a la función NewNFT() para crear un NFT de la entrada.
+La función "NewNFT()" crea un nuevo NFT de una entrada para un partido de fútbol. Para ello, genera un hash para la entrada y lo almacena en el campo Hash del NFT. Luego, genera un código QR con los datos del NFT y lo almacena en el campo QRCode del NFT.
+
+Para usar este código, podemos crear una nueva instancia de la clase Entrada y llamar a la función "NewNFT()" para crear un NFT de la entrada.
 
 Por ejemplo, el siguiente código crearía un NFT de una entrada para un partido de fútbol:
 
@@ -32,10 +35,12 @@ nft := NewNFT(entrada)
 
 Para obtener el código QR del NFT, podemos llamar al campo QRCode del NFT:
 
+```
 Go
 qrcode := nft.QRCode
-Utiliza el código con precaución. Más información
-Este código es un punto de partida para crear NFT de entradas de boletos para partidos de fútbol. Para hacerlo más robusto, podríamos agregar las siguientes características:
+```
+
+Este código es un punto de partida para crear NFT de entradas para partidos de fútbol. A medida que el proyecto FULGOL avance debemos hacerlo más robusto, podríamos agregar las siguientes características:
 
 Almacenar los NFT en una blockchain para que sean más seguros y verificables.
 Agregar una capa de tokenización para que los NFT puedan ser comprados y vendidos.
