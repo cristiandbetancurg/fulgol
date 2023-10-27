@@ -16,6 +16,7 @@ Para usar este código, podemos crear una nueva instancia de la clase Entrada y 
 
 Por ejemplo, el siguiente código crearía un NFT de una entrada para un partido de fútbol:
 
+```
 Go
 entrada := Entrada{
     ID:       1,
@@ -26,7 +27,9 @@ entrada := Entrada{
 }
 
 nft := NewNFT(entrada)
-Utiliza el código con precaución. Más información
+```
+
+
 Para obtener el código QR del NFT, podemos llamar al campo QRCode del NFT:
 
 Go
